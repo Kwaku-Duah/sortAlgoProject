@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+    <display-name>Archetype Created Web Application</display-name>
+
+    <!-- Define HelloServlet -->
+    <servlet>
+        <servlet-name>HelloServlet</servlet-name>
+        <servlet-class>com.example.servlet.HelloServlet</servlet-class>
+    </servlet>
+
+    <!-- Map HelloServlet to URL patterns -->
+    <servlet-mapping>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/hello</url-pattern>
+        <url-pattern>/hi</url-pattern>
+        <url-pattern>/welcome</url-pattern>
+    </servlet-mapping>
+
+    <!-- Define SortServlet -->
+    <servlet>
+        <servlet-name>SortServlet</servlet-name>
+        <servlet-class>com.example.servlet.SortServlet</servlet-class>
+    </servlet>
+
+    <!-- Map SortServlet to URL pattern -->
+    <servlet-mapping>
+        <servlet-name>SortServlet</servlet-name>
+        <url-pattern>/sort</url-pattern>
+    </servlet-mapping>
+
+    <!-- Define HeapServlet -->
+    <servlet>
+        <servlet-name>HeapServlet</servlet-name>
+        <servlet-class>com.example.servlet.HeapServlet</servlet-class>
+    </servlet>
+
+    <!-- Map HeapServlet to URL pattern -->
+    <servlet-mapping>
+        <servlet-name>HeapServlet</servlet-name>
+        <url-pattern>/heapsort</url-pattern>
+    </servlet-mapping>
+
+        <servlet>
+        <servlet-name>MergeSortServlet</servlet-name>
+        <servlet-class>com.example.servlet.MergeSortServlet</servlet-class>
+    </servlet>
+
+    <!-- Map MergeSortServlet to URL pattern -->
+    <servlet-mapping>
+        <servlet-name>MergeSortServlet</servlet-name>
+        <url-pattern>/mergesort</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RadixSortServlet</servlet-name>
+        <servlet-class>com.example.servlet.RadixSortServlet</servlet-class>
+    </servlet>
+
+      <servlet-mapping>
+        <servlet-name>RadixSortServlet</servlet-name>
+        <url-pattern>/radixsort</url-pattern>
+    </servlet-mapping>
+
+       <servlet>
+        <servlet-name>BucketSortServlet</servlet-name>
+        <servlet-class>com.example.servlet.BucketSortServlet</servlet-class>
+    </servlet>
+
+        <servlet-mapping>
+        <servlet-name>BucketSortServlet</servlet-name>
+        <url-pattern>/bucketsort</url-pattern>
+    </servlet-mapping>
+
+</web-app>
