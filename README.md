@@ -90,7 +90,7 @@ mvn clean install
    /path/to/tomcat/bin/startup.sh
    ```
 
-3. **Access the application** at `http://localhost:8080/sorting-algorithms-api`.
+3. **Access the application** at `http://localhost:8080/sortingalgo`.
 
 
 

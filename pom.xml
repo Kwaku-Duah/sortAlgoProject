@@ -6,7 +6,7 @@
     <groupId>com.example</groupId>
     <artifactId>my-web-app</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>war</packaging> <!-- Packaging type set to WAR -->
+    <packaging>war</packaging> 
 
     <dependencies>
         <dependency>
@@ -20,28 +20,31 @@
             <artifactId>thymeleaf</artifactId>
             <version>3.0.12.RELEASE</version>
         </dependency>
+        <dependency>
+    <groupId>com.fasterxml.jackson.datatype</groupId>
+    <artifactId>jackson-datatype-jsr310</artifactId>
+    <version>2.14.0</version> 
+</dependency>
+        
     </dependencies>
 
     <build>
         <plugins>
-            <!-- Maven Compiler Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <source>21</source> <!-- Java source compatibility -->
-                    <target>21</target> <!-- Java target compatibility -->
+                    <source>21</source> 
+                    <target>21</target> 
                 </configuration>
             </plugin>
-            
-            <!-- Maven WAR Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.3.1</version>
                 <configuration>
-                    <failOnMissingWebXml>false</failOnMissingWebXml> <!-- Allows use of Servlet 3.0+ without web.xml -->
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
         </plugins>

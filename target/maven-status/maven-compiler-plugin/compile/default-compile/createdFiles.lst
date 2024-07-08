@@ -1,6 +1,5 @@
 com/example/servlet/HeapServlet.class
 com/example/servlet/MergeSortServlet.class
-com/example/servlet/HelloServlet.class
 com/example/servlet/BucketSortServlet.class
 com/example/servlet/SortServlet.class
 com/example/servlet/RadixSortServlet.class

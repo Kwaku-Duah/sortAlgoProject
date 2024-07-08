@@ -6,20 +6,6 @@
 
     <display-name>Archetype Created Web Application</display-name>
 
-    <!-- Define HelloServlet -->
-    <servlet>
-        <servlet-name>HelloServlet</servlet-name>
-        <servlet-class>com.example.servlet.HelloServlet</servlet-class>
-    </servlet>
-
-    <!-- Map HelloServlet to URL patterns -->
-    <servlet-mapping>
-        <servlet-name>HelloServlet</servlet-name>
-        <url-pattern>/hello</url-pattern>
-        <url-pattern>/hi</url-pattern>
-        <url-pattern>/welcome</url-pattern>
-    </servlet-mapping>
-
     <!-- Define SortServlet -->
     <servlet>
         <servlet-name>SortServlet</servlet-name>

@@ -55,6 +55,14 @@
       button:hover {
         background-color: #005bb5;
       }
+      .hateoas-links {
+        margin-top: 10px;
+      }
+      .hateoas-links a {
+        margin-right: 10px;
+        color: #0073e6;
+        text-decoration: none;
+      }
     </style>
   </head>
   <body>
@@ -68,6 +76,10 @@
           <label for="arrayInput">Enter array values (comma-separated):</label>
           <input type="text" id="arrayInput" name="arrayInput" />
           <button type="submit">Quick Sort</button>
+          <div class="hateoas-links">
+            <strong>HATEOAS Links:</strong>
+            <a href=" /sort">sort HATEOAS</a>
+          </div>
         </form>
       </div>
 
@@ -79,6 +91,10 @@
           >
           <input type="text" id="arrayInputHeap" name="arrayInput" />
           <button type="submit" name="heapSort">Heap Sort</button>
+          <div class="hateoas-links">
+            <strong>HATEOAS Links:</strong>
+            <a href=" /heapsort">heapSort HATEOAS</a>
+          </div>
         </form>
       </div>
 
@@ -90,6 +106,10 @@
           >
           <input type="text" id="arrayInputMerge" name="arrayInput" />
           <button type="submit" name="mergeSort">Merge Sort</button>
+          <div class="hateoas-links">
+            <strong>HATEOAS Links:</strong>
+            <a href=" /mergesort">mergeSort HATEOAS</a>
+          </div>
         </form>
       </div>
 
@@ -101,6 +121,10 @@
           >
           <input type="text" id="arrayInputRadix" name="arrayInput" />
           <button type="submit" name="radixSort">Radix Sort</button>
+          <div class="hateoas-links">
+            <strong>HATEOAS Links:</strong>
+            <a href=" /radixsort">radixSort HATEOAS</a>
+          </div>
         </form>
       </div>
 
@@ -112,6 +136,10 @@
           >
           <input type="text" id="arrayInputBucket" name="arrayInput" />
           <button type="submit" name="bucketSort">Bucket Sort</button>
+          <div class="hateoas-links">
+            <strong>HATEOAS Links:</strong>
+            <a href=" /bucketsort">bucketSort HATEOAS</a>
+          </div>
         </form>
       </div>
     </div>

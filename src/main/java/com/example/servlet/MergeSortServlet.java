@@ -8,9 +8,21 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
+/**
+ * A servlet that handles HTTP POST requests to sort an array using the merge sort algorithm.
+ */
 @WebServlet(name = "MergeSortServlet", urlPatterns = { "/mergesort" })
 public class MergeSortServlet extends HttpServlet {
 
+    /**
+     * Handles the HTTP POST request. Retrieves an array of integers from the request,
+     * sorts it using the merge sort algorithm, and forwards the sorted array to a JSP page.
+     * 
+     * @param req  the HttpServletRequest object that contains the request the client made to the servlet
+     * @param resp the HttpServletResponse object that contains the response the servlet returns to the client
+     * @throws ServletException if the request could not be handled
+     * @throws IOException      if an input or output error occurs while the servlet is handling the POST request
+     */
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
@@ -28,7 +40,6 @@ public class MergeSortServlet extends HttpServlet {
                           .toArray();
         
         mergeSort(arr);
-
 
         req.setAttribute("sortedArray", arr);
 
